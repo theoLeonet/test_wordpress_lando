@@ -1,0 +1,14 @@
+name: test_wordpress_lando
+recipe: wordpress
+config:
+  webroot: wordpress
+  via: nginx
+  xdebug: true
+services:
+  myservice:
+    type: mariadb
+    portforward: true
+    creds:
+      user: theo_leonet
+      password: test
+      database: test_wordpress_lando
