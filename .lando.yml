@@ -1,6 +1,7 @@
 name: test_wordpress_lando
 recipe: wordpress
 config:
+  php: 8.1
   webroot: wordpress
   via: nginx
   xdebug: true
