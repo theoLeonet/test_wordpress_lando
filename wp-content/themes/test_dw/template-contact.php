@@ -8,5 +8,8 @@
     <div class="contact__content">
         <?php the_content(); ?>
     </div>
+    <div class="contact__form">
+        <?= apply_filters('the_content', '[contact-form-7 id="37" title="Untitled"]') ?>
+    </div>
 </main>
 <?php get_footer(); ?>
