@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main class="layout singleTrip">
         <h2 class="singleTrip__title"><?= get_the_title() ?></h2>
-        <figure class="singleTripe__fig">
+        <figure class="singleTrip__fig">
             <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'singleTrip__thumb']); ?>
         </figure>
         <div class="singleTrip__content">
