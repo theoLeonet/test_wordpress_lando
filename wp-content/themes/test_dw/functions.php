@@ -22,6 +22,9 @@ register_post_type('trip', [
         'title',
         'editor',
     ],
+    'rewrite' => [
+        'slug' => 'voyages'
+    ]
 ]);
 
 //Récupérer les trips via une requête wordpress.
