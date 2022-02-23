@@ -10,3 +10,6 @@
 4. Configure the `wp-config.php` file. (If it doesn't exist, create it from `wp-config-sample.php`).
 5. Create a database.
 6. Import `database.sql`. (regularly updated during development phase).
+
+## Plugins to install
+* ACF
