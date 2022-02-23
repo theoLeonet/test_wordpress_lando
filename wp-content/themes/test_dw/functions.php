@@ -23,3 +23,17 @@ register_post_type('trip', [
         'editor',
     ],
 ]);
+
+//Récupérer les trips via une requête wordpress.
+function testdw_get_trips($count = 20){
+    // 1. On instancie l'objet WP_Query
+    $trips = new WP_Query([
+        'post_type' => 'trip',
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'posts_per_page' => $count,
+    ]);
+
+    // 2. On retourne l'objet WP_Query
+    return $trips;
+}
