@@ -20,9 +20,12 @@
             <h2 class="nav__title">
                 Navigation principale
             </h2>
-            <p class="nav__placeholder">
-                TODO...
-            </p>
+            <?php wp_nav_menu([
+                'menu' => 'primary',
+                'container_class' => 'nav__container',
+                'menu_class' => 'nav__links',
+                'walker' => new PrimaryMenuWalker(),
+            ]);?>
         </nav>
     </header>
 </body>
